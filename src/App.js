@@ -1,7 +1,22 @@
+import DaysButton from "./components/DaysButton";
+
 function App() {
+  const objectFunction = (values) => {
+    return {
+      ...values,
+    };
+  };
+
+  console.log({
+    ...objectFunction({ firstName: "Pavan", lastName: "Pattinson" }),
+    dob: "13-01-1996",
+    fatherName: "Randas Naik",
+    motherName: "Manjula",
+  });
+
   return (
     <div>
-      <h1>React js prime..</h1>
+      <DaysButton />
     </div>
   );
 }
